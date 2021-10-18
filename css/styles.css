@@ -114,8 +114,9 @@ height: auto;}
     .link {text-decoration: none;}
 
     /*========== Hero========== */
-    .hero {padding: 200px 0;
-        background-color: #2F303A;
+    .hero {
+        padding: 200px 0;
+        background-color: #C4C4C4;
         text-align: center;
         }
 
@@ -185,9 +186,29 @@ height: auto;}
     .feature-list {display: flex;
         justify-content: space-between}
 
-    .feature-list .item {width: 270px;
-        height: 101px;}
-    
+    .feature-list .feature-item {width: 270px;}
+        /* height: 101px;} */
+
+    .feature-item::before {
+        display: block;
+        margin-bottom: 30px;
+        content: '';
+        height: 120px;
+        border-radius: 4px;
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: var(--secondary-bg-color);
+    }
+
+    .icon-antenna::before {background-image: url(../images/SVG/antenna.svg);}
+
+    .icon-vector-1::before {background-image: url(../images/SVG/vector-1.svg);}
+
+    .icon-vector-2::before {background-image: url(../images/SVG/vector-2.svg);}
+
+    .icon-astronaut::before {background-image: url(../images/SVG/astronaut.svg);}
+
         /* business-list */
     .business-list {display: flex;
         justify-content: space-between;}
