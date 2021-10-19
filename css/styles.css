@@ -112,6 +112,14 @@ a {text-decoration: none;}
     .auth-link:hover,
     .auth-link:focus {color: var(--accent-color);}
     
+    .icon-mail {width: 16px;
+        height: 12px;
+        margin-right: 10px;
+        }
+    .icon-tel {width: 10px;
+        height: 16px;
+        margin-right: 10px;
+        }
     
 
     /*========== Hero========== */
