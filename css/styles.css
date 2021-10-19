@@ -31,6 +31,7 @@ button {cursor: pointer;}
 img {display: block;
 max-width: 100%;
 height: auto;}
+a {text-decoration: none;}
 
     /* container */
 .container {
@@ -111,7 +112,7 @@ height: auto;}
     .auth-link:hover,
     .auth-link:focus {color: var(--accent-color);}
     
-    .link {text-decoration: none;}
+    
 
     /*========== Hero========== */
     .hero {max-width: 1615px;
@@ -195,9 +196,19 @@ height: auto;}
         justify-content: space-between}
 
     .feature-list .feature-item {width: 270px;}
+
+    .feature-icon {display: block;
+        width: 270px;
+        height: 120px;
+        margin-bottom: 30px;
+        padding: 25px 100px;
+        background-color: var(--button-bg-color);}
+    .icon {width: 70px;
+        height: 70px;}
+
         /* height: 101px;} */
 
-    .feature-item::before {
+    /* .feature-item::before {
         display: block;
         margin-bottom: 30px;
         content: '';
@@ -207,7 +218,7 @@ height: auto;}
         background-repeat: no-repeat;
         background-position: center;
         background-color: var(--secondary-bg-color);
-    }
+    } */
 
     .icon-antenna::before {background-image: url(../images/SVG/antenna.svg);}
 
