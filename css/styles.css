@@ -216,7 +216,8 @@ a {text-decoration: none;}
         background-color: var(--button-bg-color)
         }
     .icon {width: 70px;
-        height: 70px;}
+        height: 70px;
+        }
 
         /* business-list */
 
@@ -260,7 +261,30 @@ a {text-decoration: none;}
     .link-network:focus {background-color: var(--accent-color);
         color: var(--primary-bg-color);
         border-radius: 50%;}
+
+    /* Постоянные клиенты */
+
+    .clients-list {display: flex;
+        justify-content: center;}
+
+    .clients-list .clients-item + .clients-item {margin-left: 30px;}
+
+    .clients-link {display: block;
+        width: 170px;
+        height: 92px;
+        padding: 16px 32px;
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+        color: #AFB1B8;}
+    .clients-link:hover,
+    .clients-link:focus {color: var(--accent-color);
+        border: 1px solid var(--accent-color);}
     
+    .clients-icon {
+        width: 106px;
+        height: 60px;
+        fill: currentColor;}
+        
     /*============ Footer============ */
     .footer {padding-top: 60px;
         padding-bottom: 60px;
