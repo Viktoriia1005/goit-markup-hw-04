@@ -111,15 +111,18 @@ a {text-decoration: none;}
         line-height: 1.14;
         letter-spacing: 0.02em;}
     .auth-link:hover,
-    .auth-link:focus {color: var(--accent-color);}
+    .auth-link:focus {color: var(--accent-color);
+        fill: var(--accent-color);}
     
     .icon-mail {width: 16px;
         height: 12px;
         margin-right: 10px;
+        fill: var(--primary-text-color);
         }
     .icon-tel {width: 10px;
         height: 16px;
         margin-right: 10px;
+        
         }
     
 
