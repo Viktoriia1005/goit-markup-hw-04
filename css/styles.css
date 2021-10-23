@@ -118,7 +118,8 @@ a {text-decoration: none;}
     .auth-nav .item + .item {margin-left: 50px;}
 
     .auth-link {
-        display: block;
+        display: flex;
+        align-items: center;
         color: var(--primary-text-color);
         font-weight: 500;
         line-height: 1.14;
@@ -136,20 +137,19 @@ a {text-decoration: none;}
         width: 16px;
         height: 12px;
         margin-right: 10px;
-        color: currentColor;
+        fill: currentColor;
     }
         
     .icon-tel {
         width: 10px;
         height: 16px;
         margin-right: 10px;
-        color: currentColor;
+        fill: currentColor;
         }
     
 
     /*========== Hero========== */
     .hero {
-        height: 605px;
         padding: 200px 0;
         background-color: #C4C4C4;
         text-align: center;
@@ -247,7 +247,7 @@ a {text-decoration: none;}
         justify-content: center;
         height: 120px;
         margin-bottom: 30px;
-        padding: 25px 100px;
+        padding: 25px 0;
         border-radius: 4px;
         background-color: var(--button-bg-color)
         }
@@ -279,20 +279,20 @@ a {text-decoration: none;}
 
     .team-info {
         padding-top: 30px;
-        margin-bottom: 16px;
-    }
+        padding-bottom: 30px;
+        }
 
     .team-list-text {
         font-weight: 400;
         font-size: 16px;
         line-height: 1.2;
         text-align: center;
-    }
+        }
 
     .team-network {
         display: flex;
         justify-content: center;
-        margin-bottom: 30px;
+        margin-top: 16px;
         }
 
     .link-network {
@@ -303,11 +303,7 @@ a {text-decoration: none;}
         justify-content: center;
         color: #AFB1B8;
         }    
-    .item-network {
-        display: flex;
-        align-items: center;
-        justify-content: center;}
-
+    
     .icon-network {
             width: 20px;
             height: 20px;
@@ -332,10 +328,11 @@ a {text-decoration: none;}
     .clients-list .clients-item + .clients-item {margin-left: 30px;}
 
     .clients-link {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 170px;
         height: 92px;
-        padding: 16px 32px;
         border: 1px solid #AFB1B8;
         border-radius: 4px;
         color: #AFB1B8;
@@ -361,6 +358,7 @@ a {text-decoration: none;}
     }
     .footer-container {
         display: flex;
+        align-items: baseline;
     }
 
         /* logo footer */
@@ -396,8 +394,7 @@ a {text-decoration: none;}
     .footer-right {
         width: 206px;
         margin-left: 70px;
-        margin-top: 12px;
-    }
+        }
 
     .join-title {
         font-weight: 700px;
@@ -455,7 +452,7 @@ a {text-decoration: none;}
         font-size: 16px;
         padding: 6px 22px;
         min-width:auto;
-        line-height: 1,6;
+        line-height: 1.6;
         text-align: center;
         background-color: var(--button-bg-color);
         color: var(--primary-title-color);
@@ -484,16 +481,12 @@ a {text-decoration: none;}
         border: 1px solid #EEEEEE
     }
 
-    .work-item:hover {
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    }
-
     .work-item:nth-child(3n) {margin-right: 0px;}
 
     .work-item:nth-last-child(-n + 3) {margin-bottom: 0px;}
 
     .work-info {padding: 20px 24px; }
-    
+
     .work-list-title {
         color: var(--primary-title-color);
         font-weight: 700;
@@ -506,5 +499,12 @@ a {text-decoration: none;}
     .work-list-text {
         font-size: 16px;
         line-height: 1.9;
+        color: var(--primary-text-color);
+    }
+
+    .work-link {display: block;}
+
+    .work-link:hover,
+    .work-link:focus {box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     }
     
